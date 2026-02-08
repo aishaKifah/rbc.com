@@ -11,20 +11,19 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    body, html {
-      height: 110%;
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      background: url('Capture.PNG') no-repeat center center fixed;
-      background-size: cover;
-    }
-
-    .top-bar {
-      position: absolute;
-      top: 40px;
-      right: 50px;
-      
+      background: url('Capture.PNG') no-repeat top center fixed; /* تثبيت الصورة من الأعلى */
+      background-size: cover; /* تغطي الشاشة بالكامل */
+      display: flex;
+      justify-content: flex-end; /* لوضع الزر على اليمين */
+      align-items: flex-start; /* لوضع الزر في الأعلى */
+      padding: 40px 50px; /* مسافة من الأعلى واليمين */
     }
 
     .login-btn {
@@ -44,9 +43,7 @@
 </head>
 <body>
 
-  <div class="top-bar">
-    <a href="login.html" class="login-btn">Sign In</a>
-  </div>
+  <a href="login.html" class="login-btn">Sign In</a>
 
 </body>
 </html>
