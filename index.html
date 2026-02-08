@@ -1,42 +1,54 @@
-/* Reset كامل لإزالة الهوامش البيضاء */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden; /* يمنع أياً كان يسبب سكرول أفقي */
-}
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+       padding: 0;
+    }
 
-body {
-  background: url('Capture.PNG') no-repeat center top;
-  background-size: cover; /* الصورة تغطي كامل الشاشة بدون جوانب بيضا */ :contentReference[oaicite:0]{index=0}
-  background-repeat: no-repeat;
-  background-position: top center; /* تثبيت مكان الصورة */ :contentReference[oaicite:1]{index=1}
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: flex-end; /* زر على اليمين */
-  align-items: flex-start; /* زر فوق */
-  padding-top: 60px; /* ينزل الزر لتحت قليلاً */
-  padding-right: 40px;
-}
+    body {
+      background-position: center top; /* يحافظ على الجزء العلوي */
+      background-size: cover; /* يغطي كل العرض والارتفاع */
+      background: url('Capture.PNG') no-repeat top center fixed; /* تثبيت الصورة من الأعلى */
+      display: flex;
+      justify-content: flex-end; /* لوضع الزر على اليمين */
+      align-items: flex-start; /* لوضع الزر في الأعلى */
+      margin: 0;
+   
 
-.login-btn {
-  background-color: #ffcc00;
-  color: #003087;
-  padding: 14px 26px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.3s;
-  position: relative; /* يبقي فوق الخلفية */
-  top: 20px; /* ينزّل الزر لو احتاج */
-}
+    }
 
-.login-btn:hover {
-  background-color: #e6b800;
-}
+    .login-btn {
+      background-color: #ffcc00;
+      color: #003087;
+      padding: 12px 22px;
+      border-radius: 1px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .login-btn:hover {
+      background-color: #e6b800;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="login.html" class="login-btn">Sign In</a>
+
+</body>
+</html>
